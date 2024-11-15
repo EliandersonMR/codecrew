@@ -1,0 +1,285 @@
+/* Estilos Globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+         body {
+           font-family: Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           background-color: #f2f2f2;
+           color: #333;
+         }
+    
+         .header {
+           background-color: #8b0000;
+           color: #fff;
+           text-align: center;
+           padding: 20px 0;
+           font-size: 24px;
+         }
+    
+         .container {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           padding: 20px;
+         }
+    
+         .box {
+           background-color: #fff;
+           border-radius: 5px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+           padding: 20px;
+           margin: 20px 0;
+           width: 90%;
+           max-width: 700px;
+         }
+    
+         h2 {
+           color: #8b0000;
+           font-size: 20px;
+           text-align: center;
+           margin-bottom: 20px;
+         }
+    
+         form {
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+         }
+    
+         input[type="text"],
+         input[type="password"] {
+           padding: 10px;
+           border: 1px solid #ccc;
+           border-radius: 5px;
+           width: 100%;
+         }
+    
+         button {
+           padding: 10px;
+           background-color: #8b0000;
+           color: #fff;
+           border: none;
+           border-radius: 5px;
+           cursor: pointer;
+           font-weight: bold;
+         }
+    
+         .login-options {
+           display: flex;
+           justify-content: space-between;
+           margin-top: 10px;
+         }
+    
+         .login-options a {
+           color: #8b0000;
+           text-decoration: none;
+         }
+    
+         .article,
+         .tip,
+         .treino-article {
+           background-color: #f2f2f2;
+           padding: 15px;
+           border-radius: 5px;
+           margin-bottom: 10px;
+         }
+    
+         .treino-article {
+           display: flex;
+           align-items: center;
+         }
+    
+         .treino-article img {
+           max-width: 100px;
+           margin-right: 20px;
+           border-radius: 5px;
+         }
+    
+         .treino-article a {
+           display: inline-block;
+           margin-top: 10px;
+           padding: 8px 16px;
+           background-color: #8b0000;
+           color: #fff;
+           border-radius: 5px;
+           text-decoration: none;
+         }
+
+.navbar {
+  background-color: #cc0000;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo das Seções */
+section {
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 28px;
+  color: #cc0000;
+  margin-bottom: 20px;
+}
+
+/* Seção de Login */
+.login-section form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-section input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-section button {
+  padding: 10px;
+  background-color: #cc0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-section button:hover {
+  background-color: #990000;
+}
+
+.login-section p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-section a {
+  color: #cc0000;
+  text-decoration: none;
+}
+
+.login-section a:hover {
+  text-decoration: underline;
+}
+
+/* Tabelas e Listas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+table th {
+  background-color: #f0f0f0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+button {
+  background-color: #cc0000;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #990000;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+/* Estilo base para o botão */
+.mobile-button {
+  background-color: #4CAF50; /* Cor verde */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Botão responsivo */
+@media screen and (max-width: 768px) {
+  .mobile-button {
+      width: 100%; /* O botão vai ocupar toda a largura da tela */
+      font-size: 20px; /* Aumenta o tamanho da fonte para facilitar o clique */
+      padding: 20px 0; /* Aumenta o padding para tornar o botão maior */
+  }
+}
+
+/* Efeito quando o botão é clicado */
+.mobile-button:hover {
+  background-color: #45a049; /* Cor de fundo mais escura quando passar o mouse */
+}
