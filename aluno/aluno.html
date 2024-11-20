@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeCrew-fitness</title>
+  <link rel="stylesheet" href="/aluno/stylesAluno.css" />
+  
+<script src="/aluno/scriptAluno.js" defer></script>
+ 
+</head>
+
+<body>
+  <div class="container-calc">
+
+    <div class="calculadora-imc">
+      <h2 class="title-main">Calculadora IMC</h2>
+      <form onsubmit="calcularIMC(event)">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso" required />
+
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" name="altura" step="0.01" required />
+
+        <button class="btn-calc" type="submit">Calcular IMC</button>
+      </form>
+
+      <p id="resultadoIMC"></p>
+    </div>
+
+    <div class="imc-about">
+      <h2 class="title-main">Resumo</h2>
+      <p>
+
+      Calcule seu IMC de maneira fácil e rápida com nossa calculadora!
+      Descubra se seu peso está dentro da faixa ideal para sua altura e cuide da sua saúde com mais clareza e precisão.
+      O Índice de Massa Corporal (IMC) é uma ferramenta essencial para monitorar sua saúde e bem-estar. Com base no seu
+      IMC, podemos oferecer treinos personalizados para atender às suas necessidades.
+      Lembre-se: o IMC é um indicativo e não substitui uma avaliação médica completa. Para resultados mais precisos,
+      consulte um profissional de saúde.
+      Utilize nossa calculadora para acompanhar mudanças ao longo do tempo e manter-se saudável. Uma vida equilibrada
+      começa com pequenas atitudes, e calcular seu IMC é o primeiro passo.
+      </p>
+    </div>
+  </div>
+
+  <script>
+  function calcularIMC(event) {
+    event.preventDefault();
+  
+    const peso = parseFloat(document.getElementById('peso').value);
+    const altura = parseFloat(document.getElementById('altura').value);
+
+    if (!peso || !altura || altura <= 0) {
+      document.getElementById('resultadoIMC').textContent = 
+        "Por favor, insira valores válidos para peso e altura.";
+      return;
+    }
+
+    const imc = (peso / (altura * altura)).toFixed(2);
+
+    let classificacao = '';
+
+    if (imc < 18.5) {
+      classificacao = 'Abaixo do peso';
+    } else if (imc >= 18.5 && imc < 24.9) {
+      classificacao = 'Peso normal';
+    } else if (imc >= 25 && imc < 29.9) {
+      classificacao = 'Sobrepeso';
+    } else if (imc >= 30 && imc < 34.9) {
+      classificacao = 'Obesidade grau 1';
+    } else if (imc >= 35 && imc < 39.9) {
+      classificacao = 'Obesidade grau 2';
+    } else {
+      classificacao = 'Obesidade grau 3';
+    }
+
+    document.getElementById('resultadoIMC').textContent = 
+      `Seu IMC é ${imc} (${classificacao}).`;
+  }
+</script>
+
+<section id="cards-section">
+
+</section>
+
+<footer> 
+<p>oi</p>
+</footer>
+
+ 
+
+</body>
+
+</html>
