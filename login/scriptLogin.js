@@ -32,7 +32,11 @@ function verificarCredencias(emailProf, senhaProf){
    
   }
 
-  function verificarCredenciasAluno(emailAluno, senhaAluno){
+ 
+
+} 
+
+ function verificarCredenciasAluno(emailAluno, senhaAluno){
 
   if (emailAluno == emailAluno1 && senhaAluno == senhaAluno1){
 
@@ -43,8 +47,6 @@ function verificarCredencias(emailProf, senhaProf){
     resultError.innerHTML = "sua senha ou email está errado!"
    
   }
-
-} 
 
 } 
 
